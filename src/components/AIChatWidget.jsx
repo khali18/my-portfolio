@@ -8,7 +8,7 @@ export default function AIChatWidget() {
     const [messages, setMessages] = useState([
         {
             sender: 'bot',
-            text: `Hi! I'm Sheripha's AI Assistant. Ask me anything about her services, healthcare projects, tech stack, or availability!`,
+            text: `Hi! I'm Sheripha's AI Assistant. Ask me anything about my services, healthcare projects, tech stack, or availability!`,
             timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
     ]);
@@ -47,7 +47,7 @@ export default function AIChatWidget() {
             }
 
             if (!matchedAnswer) {
-                matchedAnswer = `Sheripha specializes in AI business automation, n8n workflows, custom chatbots, and healthcare systems. Feel free to ask about her projects (AI Clinic Receptionist, Pharmacy Intelligence), tech stack (Python, Node, React), or use the Contact Form below!`;
+                matchedAnswer = `I specialize in AI business automation, n8n workflows, custom chatbots, and healthcare systems. Feel free to ask about my projects (AI Clinic Receptionist, Pharmacy Intelligence), tech stack (Python, Node, React), or use the Contact Form below!`;
             }
 
             setMessages((prev) => [
@@ -125,8 +125,8 @@ export default function AIChatWidget() {
 
                                 <div
                                     className={`max-w-[80%] p-3 rounded-2xl ${msg.sender === 'user'
-                                            ? 'bg-electric-600 text-white rounded-br-none'
-                                            : 'bg-slate-900 text-slate-200 border border-slate-800 rounded-bl-none'
+                                        ? 'bg-electric-600 text-white rounded-br-none'
+                                        : 'bg-slate-900 text-slate-200 border border-slate-800 rounded-bl-none'
                                         }`}
                                 >
                                     <p className="leading-relaxed">{msg.text}</p>

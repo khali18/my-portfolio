@@ -4,7 +4,7 @@ export const personalInfo = {
     title: "AI Software Automation Engineer & Computer Technology Scholar",
     tagline: "Building AI Systems That Save Businesses Time, Reduce Costs, and Automate Work.",
     bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and Computer Technology student passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
-    bioFull: "Sheripha Sulemana is a final-year Bachelor of Technology (Computer Technology) student with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nShe specializes in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, Sheripha empowers companies to eliminate repetitive tasks and scale effortlessly.",
+    bioFull: "I am a final-year Bachelor of Technology (Computer Technology) student with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
     mission: "I believe technology should eliminate repetitive work and allow people to focus on what matters most.",
     status: "Available for AI Automation Contracts & Full-time Engineering Roles",
     location: "Accra, Ghana • Remote Worldwide",
@@ -478,22 +478,22 @@ Protect your backend from API rate limits by wrapping LLM requests in exponentia
 export const aiAssistantKnowledge = [
     {
         keywords: ["who", "about", "sheripha", "background", "bio", "experience"],
-        answer: "Sheripha Sulemana is an AI Software Automation Engineer and final-year B.Tech (Computer Technology) student. She specializes in building AI business automation systems, custom chatbots, workflow pipelines, and healthcare software solutions."
+        answer: "I am Sheripha Sulemana, an AI Software Automation Engineer and final-year B.Tech (Computer Technology) student. I specialize in building AI business automation systems, custom chatbots, workflow pipelines, and healthcare software solutions."
     },
     {
         keywords: ["service", "services", "offer", "do", "help", "work"],
-        answer: "Sheripha offers 10 core services: AI Business Automation, Custom AI Chatbots, Workflow Automation (n8n/Zapier), Business Process Optimization, Web Application Development, API Integration, Inventory Automation, Healthcare Software, Database Design, and Analytics Dashboards."
+        answer: "I offer 10 core services: AI Business Automation, Custom AI Chatbots, Workflow Automation (n8n/Zapier), Business Process Optimization, Web Application Development, API Integration, Inventory Automation, Healthcare Software, Database Design, and Analytics Dashboards."
     },
     {
         keywords: ["skills", "stack", "tech", "technologies", "languages", "python", "react"],
-        answer: "Sheripha's technical stack includes Python, JavaScript, Node.js, Express, React, HTML/CSS, OpenAI API, Google Gemini, n8n, Zapier, Make, MongoDB, SQLite, MySQL, Git, and GitHub."
+        answer: "My technical stack includes Python, JavaScript, Node.js, Express, React, HTML/CSS, OpenAI API, Google Gemini, n8n, Zapier, Make, MongoDB, SQLite, MySQL, Git, and GitHub."
     },
     {
         keywords: ["project", "projects", "portfolio", "work", "clinic", "pharmacy", "whatsapp"],
-        answer: "Sheripha has built impressive projects including the AI Clinic Receptionist, Pharmacy Inventory Intelligence System, Medicine Expiry Prediction Dashboard, AI WhatsApp Customer Assistant, Invoice Automation System, and Hospital Management System."
+        answer: "I have built impressive production projects including the AI Clinic Receptionist, Pharmacy Inventory Intelligence System, Medicine Expiry Prediction Dashboard, AI WhatsApp Customer Assistant, Invoice Automation System, and Hospital Management System."
     },
     {
         keywords: ["contact", "hire", "email", "reach", "hire me", "quote", "price", "budget"],
-        answer: "You can reach Sheripha directly via email at sheripha.sulemana@gmail.com, WhatsApp (+233 24 000 0000), or by using the interactive Contact Form on this site!"
+        answer: "You can reach me directly via email at sheripha.sulemana@gmail.com, WhatsApp (+233 24 371 1566), or by using the interactive Contact Form on this site!"
     }
 ];

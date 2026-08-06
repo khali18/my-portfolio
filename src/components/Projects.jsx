@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Sparkles, Filter, CheckCircle2, ArrowUpRight, X } from 'lucide-react';
+import { ExternalLink, Github, Sparkles, Filter, CheckCircle2, ArrowUpRight, X, Info, Play } from 'lucide-react';
 import { projects } from '../data/portfolioData';
 
 const filterCategories = ["All", "Healthcare & AI", "AI & Agents", "Business Automation"];
@@ -7,10 +7,18 @@ const filterCategories = ["All", "Healthcare & AI", "AI & Agents", "Business Aut
 export default function Projects() {
     const [activeFilter, setActiveFilter] = useState("All");
     const [selectedProject, setSelectedProject] = useState(null);
+    const [demoNoticeProject, setDemoNoticeProject] = useState(null);
 
     const filteredProjects = activeFilter === "All"
         ? projects
         : projects.filter(p => p.category === activeFilter);
+
+    const handleLiveDemoClick = (e, project) => {
+        e.preventDefault();
+        e.stopPropagation();
+        // Open case study modal or live sandbox notification
+        setSelectedProject(project);
+    };
 
     return (
         <section id="projects" className="py-24 relative z-10 bg-slate-100/50 dark:bg-navy-950/50">
@@ -26,7 +34,7 @@ export default function Projects() {
                         Production-Grade <span className="text-gradient-emerald">AI & Software Systems</span>
                     </h2>
                     <p className="text-slate-600 dark:text-slate-400 text-base">
-                        Real-world applications delivering measurable business efficiency, healthcare accuracy, and cost savings.
+                        Real-world applications I've built delivering measurable business efficiency, healthcare accuracy, and cost savings.
                     </p>
                 </div>
 
@@ -51,7 +59,8 @@ export default function Projects() {
                     {filteredProjects.map((project) => (
                         <div
                             key={project.id}
-                            className="group rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between"
+                            onClick={() => setSelectedProject(project)}
+                            className="group rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between cursor-pointer"
                         >
                             <div>
                                 {/* Project Image Container */}
@@ -71,10 +80,7 @@ export default function Projects() {
 
                                 {/* Content */}
                                 <div className="p-6 space-y-4">
-                                    <h3
-                                        onClick={() => setSelectedProject(project)}
-                                        className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-electric-500 transition-colors cursor-pointer"
-                                    >
+                                    <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-electric-500 transition-colors">
                                         {project.title}
                                     </h3>
 
@@ -104,33 +110,24 @@ export default function Projects() {
 
                             {/* Action Buttons */}
                             <div className="p-6 pt-0 flex items-center gap-3">
-                                <a
-                                    href={project.liveDemoUrl}
-                                    target="_blank"
-                                    rel="noreferrer"
+                                <button
+                                    onClick={(e) => handleLiveDemoClick(e, project)}
                                     className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold text-white bg-electric-600 hover:bg-electric-500 transition-colors shadow-sm"
                                 >
-                                    <ExternalLink className="w-3.5 h-3.5" />
-                                    <span>Live Demo</span>
-                                </a>
+                                    <Play className="w-3.5 h-3.5 fill-current" />
+                                    <span>Case Study & Demo</span>
+                                </button>
 
                                 <a
                                     href={project.githubUrl}
                                     target="_blank"
                                     rel="noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
                                     className="p-2.5 rounded-xl text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                                     title="View GitHub Repository"
                                 >
                                     <Github className="w-4 h-4" />
                                 </a>
-
-                                <button
-                                    onClick={() => setSelectedProject(project)}
-                                    className="p-2.5 rounded-xl text-electric-600 dark:text-electric-400 bg-electric-500/10 hover:bg-electric-500/20 transition-colors"
-                                    title="View Full Case Study"
-                                >
-                                    <ArrowUpRight className="w-4 h-4" />
-                                </button>
                             </div>
 
                         </div>
@@ -208,8 +205,19 @@ export default function Projects() {
                             </div>
                         </div>
 
+                        {/* Live Demo Sandbox Information Box */}
+                        <div className="p-4 rounded-2xl bg-electric-500/10 border border-electric-500/30 text-slate-700 dark:text-slate-300 text-xs space-y-2">
+                            <div className="flex items-center gap-2 font-bold text-electric-600 dark:text-electric-400">
+                                <Info className="w-4 h-4" />
+                                <span>Live Demo Environment Notice:</span>
+                            </div>
+                            <p className="text-[11px] leading-relaxed">
+                                Live sandbox instances for {selectedProject.title} are deployed on demand for client walkthroughs. You can inspect the source code, architecture, and run instructions directly on GitHub or request a live guided demo below!
+                            </p>
+                        </div>
+
                         {/* Modal Footer */}
-                        <div className="pt-4 flex items-center justify-end gap-3 border-t border-slate-200 dark:border-slate-800">
+                        <div className="pt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 dark:border-slate-800">
                             <a
                                 href={selectedProject.githubUrl}
                                 target="_blank"
@@ -221,13 +229,12 @@ export default function Projects() {
                             </a>
 
                             <a
-                                href={selectedProject.liveDemoUrl}
-                                target="_blank"
-                                rel="noreferrer"
+                                href="#contact"
+                                onClick={() => setSelectedProject(null)}
                                 className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs font-bold text-white bg-electric-600 hover:bg-electric-500 shadow-glow-blue"
                             >
                                 <ExternalLink className="w-4 h-4" />
-                                <span>Launch Live System</span>
+                                <span>Request Guided Demo</span>
                             </a>
                         </div>
 
