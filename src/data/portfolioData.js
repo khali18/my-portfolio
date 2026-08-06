@@ -13,7 +13,7 @@ export const personalInfo = {
     whatsapp: "https://wa.me/233243711566",
     linkedin: "https://www.linkedin.com/in/sherifa-sulemana-6555a4229",
     github: "https://github.com/khali18",
-    avatarUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+    avatarUrl: "/sheripha.jpg"
 };
 
 export const stats = [
