@@ -51,7 +51,7 @@ export default function Hero() {
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
                                 Building{' '}
                                 <span className="text-gradient-electric">AI Systems</span> That{' '}
-                                <span className="underline decoration-electric-500 decoration-wavy decoration-2">
+                                <span className="text-electric-500 font-extrabold">
                                     Save Time
                                 </span>
                                 , Reduce Costs, and Automate Work.
