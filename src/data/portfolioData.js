@@ -494,6 +494,6 @@ export const aiAssistantKnowledge = [
     },
     {
         keywords: ["contact", "hire", "email", "reach", "hire me", "quote", "price", "budget"],
-        answer: "You can reach me directly via email at sheripha.sulemana@gmail.com, WhatsApp (+233 24 371 1566), or by using the interactive Contact Form on this site!"
+        answer: "You can reach me directly via email at sheripha.sulemana@gmail.com, WhatsApp (+233 24 371 1566), or by using the interactive Contact Form on this site! Project packages start from GH₵1,000."
     }
 ];

@@ -3,10 +3,10 @@ import { Mail, MessageSquare, Send, Github, Linkedin, CheckCircle2, Coins, Spark
 import { personalInfo } from '../data/portfolioData';
 
 const budgetRanges = [
-    "GH₵10,000 - GH₵30,000",
-    "GH₵30,000 - GH₵60,000",
-    "GH₵60,000 - GH₵120,000",
-    "GH₵120,000+ Enterprise",
+    "GH₵1,000 - GH₵3,000",
+    "GH₵3,000 - GH₵5,000",
+    "GH₵5,000 - GH₵10,000",
+    "GH₵10,000+ Enterprise",
     "Consultation / Hourly"
 ];
 
@@ -25,7 +25,7 @@ export default function Contact() {
         email: '',
         company: '',
         projectScope: 'AI Business Automation',
-        budget: 'GH₵30,000 - GH₵60,000',
+        budget: 'GH₵1,000 - GH₵3,000',
         message: ''
     });
     const [submitted, setSubmitted] = useState(false);
@@ -145,7 +145,7 @@ export default function Contact() {
                                         Thank you, <strong>{formData.name}</strong>. Sheripha will review your project requirements and respond within 12 hours.
                                     </p>
                                     <button
-                                        onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', company: '', projectScope: 'AI Business Automation', budget: 'GH₵30,000 - GH₵60,000', message: '' }); }}
+                                        onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', company: '', projectScope: 'AI Business Automation', budget: 'GH₵1,000 - GH₵3,000', message: '' }); }}
                                         className="mt-4 px-6 py-2.5 rounded-xl text-xs font-bold text-white bg-electric-600 hover:bg-electric-500"
                                     >
                                         Send Another Inquiry
