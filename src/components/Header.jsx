@@ -6,6 +6,7 @@ const navItems = [
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
+    { label: 'ROI Calc', href: '#roi-calculator' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
     { label: 'Process', href: '#process' },
@@ -47,10 +48,10 @@ export default function Header({ isDark, setIsDark }) {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? isDark
-                        ? 'bg-navy-950/80 backdrop-blur-md border-b border-slate-800/60 shadow-lg'
-                        : 'bg-white/80 backdrop-blur-md border-b border-slate-200/80 shadow-sm'
-                    : 'bg-transparent'
+                ? isDark
+                    ? 'bg-navy-950/80 backdrop-blur-md border-b border-slate-800/60 shadow-lg'
+                    : 'bg-white/80 backdrop-blur-md border-b border-slate-200/80 shadow-sm'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -79,8 +80,8 @@ export default function Header({ isDark, setIsDark }) {
                                 key={item.label}
                                 href={item.href}
                                 className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 ${isActive
-                                        ? 'bg-electric-600 text-white shadow-sm'
-                                        : 'text-slate-600 dark:text-slate-300 hover:text-electric-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/50'
+                                    ? 'bg-electric-600 text-white shadow-sm'
+                                    : 'text-slate-600 dark:text-slate-300 hover:text-electric-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/50'
                                     }`}
                             >
                                 {item.label}

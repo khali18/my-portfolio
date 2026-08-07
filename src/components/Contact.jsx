@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Mail, MessageSquare, Send, Github, Linkedin, CheckCircle2, DollarSign, Sparkles } from 'lucide-react';
+import { Mail, MessageSquare, Send, Github, Linkedin, CheckCircle2, Coins, Sparkles } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const budgetRanges = [
-    "$1,000 - $3,000",
-    "$3,000 - $5,000",
-    "$5,000 - $10,000",
-    "$10,000+ Enterprise",
+    "GH₵10,000 - GH₵30,000",
+    "GH₵30,000 - GH₵60,000",
+    "GH₵60,000 - GH₵120,000",
+    "GH₵120,000+ Enterprise",
     "Consultation / Hourly"
 ];
 
@@ -25,7 +25,7 @@ export default function Contact() {
         email: '',
         company: '',
         projectScope: 'AI Business Automation',
-        budget: '$3,000 - $5,000',
+        budget: 'GH₵30,000 - GH₵60,000',
         message: ''
     });
     const [submitted, setSubmitted] = useState(false);
@@ -145,7 +145,7 @@ export default function Contact() {
                                         Thank you, <strong>{formData.name}</strong>. Sheripha will review your project requirements and respond within 12 hours.
                                     </p>
                                     <button
-                                        onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', company: '', projectScope: 'AI Business Automation', budget: '$3,000 - $5,000', message: '' }); }}
+                                        onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', company: '', projectScope: 'AI Business Automation', budget: 'GH₵30,000 - GH₵60,000', message: '' }); }}
                                         className="mt-4 px-6 py-2.5 rounded-xl text-xs font-bold text-white bg-electric-600 hover:bg-electric-500"
                                     >
                                         Send Another Inquiry
@@ -212,8 +212,8 @@ export default function Contact() {
                                     {/* Budget selector */}
                                     <div className="space-y-2">
                                         <label className="text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1">
-                                            <DollarSign className="w-3.5 h-3.5 text-emerald-500" />
-                                            <span>Estimated Budget Range:</span>
+                                            <Coins className="w-3.5 h-3.5 text-emerald-500" />
+                                            <span>Estimated Budget Range (Ghana Cedi - GH₵):</span>
                                         </label>
                                         <div className="flex flex-wrap gap-2">
                                             {budgetRanges.map((b, idx) => (

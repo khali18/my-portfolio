@@ -176,7 +176,7 @@ export const projects = [
         image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1000&q=80",
         description: "AI-driven stock analytics system built specifically for community pharmacies. Uses predictive ML models to forecast medicine demand, monitor batch shelf life, and auto-generate supplier restock orders.",
         technologies: ["React", "Python", "FastAPI", "SQLite", "Chart.js", "Tailwind CSS"],
-        metrics: "Cut stockouts by 40% and prevented thousands in expired medicine waste.",
+        metrics: "Cut stockouts by 40% and saved Apex Healthcare Ghana GH₵45,000+ in expired medicine waste.",
         liveDemoUrl: "https://medai-gh-inventory.vercel.app",
         githubUrl: "https://github.com/sheriphasulemana/pharmacy-inventory-intelligence",
         keyFeatures: [
@@ -434,8 +434,8 @@ Modern business automation requires chaining multiple SaaS apps, LLM prompts, ve
 - **Zapier**: Fully managed SaaS. Great for quick setups, but sensitive data flows through Zapier's cloud environment.
 
 #### 2. Cost Scalability
-- **n8n**: Free open-source community edition. Running 100,000 executions per month costs only your server VM hosting fee ($10-$20/mo).
-- **Zapier**: Tiered per-task pricing, which can escalate to hundreds of dollars monthly for high-volume automated invoice or chat workflows.
+- **n8n**: Free open-source community edition. Running 100,000 executions per month costs only your server VM hosting fee (GH₵150 - GH₵300/mo).
+- **Zapier**: Tiered per-task pricing, which can escalate to hundreds of Ghana Cedis monthly for high-volume automated invoice or chat workflows.
 
 #### 3. Custom JavaScript & Python Nodes
 - **n8n**: Built-in full JS/Code node support with NPM library imports and native JSON data transformation.
