@@ -1,10 +1,10 @@
 export const personalInfo = {
     name: "Sheripha Sulemana",
-    role: "AI Software Automation Engineer",
-    title: "AI Software Automation Engineer & Computer Technology Scholar",
+    role: "AI Software Automation Engineer & B.Sc. CS Graduate",
+    title: "AI Software Automation Engineer & B.Sc. Computer Science Graduate",
     tagline: "Building AI Systems That Save Businesses Time, Reduce Costs, and Automate Work.",
-    bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and Computer Technology student passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
-    bioFull: "I am a final-year Bachelor of Technology (Computer Technology) student with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
+    bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and B.Sc. Computer Science graduate passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
+    bioFull: "I am a Bachelor of Science in Computer Science (B.Sc. Computer Science) graduate with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nMy B.Sc. Computer Science final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system designed for pharmacies and users to prevent drug waste, streamline stock forecasting, and automate patient notifications.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
     mission: "I believe technology should eliminate repetitive work and allow people to focus on what matters most.",
     status: "Available for AI Automation Contracts & Full-time Engineering Roles",
     location: "Accra, Ghana • Remote Worldwide",
@@ -169,21 +169,21 @@ export const projects = [
         ]
     },
     {
-        id: "pharmacy-inventory-intelligence",
-        title: "Pharmacy Inventory Intelligence System",
+        id: "medai-gh-stock-expiry-prediction",
+        title: "MedAI GH: AI Medicine Stock & Expiry Prediction System",
         category: "Healthcare & AI",
-        badge: "Featured System",
+        badge: "B.Sc. Capstone Project",
         image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1000&q=80",
-        description: "AI-driven stock analytics system built specifically for community pharmacies. Uses predictive ML models to forecast medicine demand, monitor batch shelf life, and auto-generate supplier restock orders.",
-        technologies: ["React", "Python", "FastAPI", "SQLite", "Chart.js", "Tailwind CSS"],
-        metrics: "Cut stockouts by 40% and saved Apex Healthcare Ghana GH₵45,000+ in expired medicine waste.",
+        description: "B.Sc. Computer Science Final Year Capstone Project. An intelligent AI web-based medicine stock management and expiring prediction system built for community pharmacies and users/patients. Predicts medicine demand, monitors batch shelf-life risk, dispatches automated WhatsApp inventory alerts, and integrates touchless Mobile Money (GHQR/USSD) payment plans.",
+        technologies: ["React", "Python", "FastAPI", "SQLite", "OpenAI GPT-4o", "PyWhatKit", "Chart.js", "Tailwind CSS"],
+        metrics: "B.Sc. CS Capstone • Cut stockouts by 40%, saved GH₵45,000+ in expired medicine waste, and automated patient risk alerts.",
         liveDemoUrl: "https://medai-gh-inventory.vercel.app",
         githubUrl: "https://github.com/sheriphasulemana/pharmacy-inventory-intelligence",
         keyFeatures: [
-            "Dynamic stock breakdown by category with percentage distribution",
-            "AI Category Insights Panel generating natural language summaries",
-            "Offline-first PWA mode with barcode scan support",
-            "Dynamic QR code generator for batch tracking"
+            "AI web-based stock forecasting & expiring prediction engine for pharmacies & users",
+            "Dynamic batch shelf-life risk matrix (Critical 30-day, Warning 90-day, Safe thresholds)",
+            "Automated real-time WhatsApp alert dispatch for inventory risk telemetry",
+            "Touchless Mobile Money (GHQR / USSD one-tap dial) payment portal & payment plan module"
         ]
     },
     {
@@ -477,8 +477,8 @@ Protect your backend from API rate limits by wrapping LLM requests in exponentia
 
 export const aiAssistantKnowledge = [
     {
-        keywords: ["who", "about", "sheripha", "background", "bio", "experience"],
-        answer: "I am Sheripha Sulemana, an AI Software Automation Engineer and final-year B.Tech (Computer Technology) student. I specialize in building AI business automation systems, custom chatbots, workflow pipelines, and healthcare software solutions."
+        keywords: ["who", "about", "sheripha", "background", "bio", "experience", "education", "degree"],
+        answer: "I am Sheripha Sulemana, an AI Software Automation Engineer and B.Sc. Computer Science graduate. My B.Sc. final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system for pharmacies and users."
     },
     {
         keywords: ["service", "services", "offer", "do", "help", "work"],
@@ -489,8 +489,8 @@ export const aiAssistantKnowledge = [
         answer: "My technical stack includes Python, JavaScript, Node.js, Express, React, HTML/CSS, OpenAI API, Google Gemini, n8n, Zapier, Make, MongoDB, SQLite, MySQL, Git, and GitHub."
     },
     {
-        keywords: ["project", "projects", "portfolio", "work", "clinic", "pharmacy", "whatsapp"],
-        answer: "I have built impressive production projects including the AI Clinic Receptionist, Pharmacy Inventory Intelligence System, Medicine Expiry Prediction Dashboard, AI WhatsApp Customer Assistant, Invoice Automation System, and Hospital Management System."
+        keywords: ["project", "projects", "portfolio", "work", "capstone", "final year", "medai", "pharmacy", "whatsapp"],
+        answer: "My flagship project is MedAI GH (my B.Sc. Computer Science Final Year Capstone Project), an AI web-based medicine stock & expiring prediction system for pharmacies and users. Other projects include the AI Clinic Receptionist, AI WhatsApp Customer Assistant, Invoice Automation System, and Hospital Management System."
     },
     {
         keywords: ["contact", "hire", "email", "reach", "hire me", "quote", "price", "budget"],

@@ -45,8 +45,8 @@ export default function Projects() {
                             key={cat}
                             onClick={() => setActiveFilter(cat)}
                             className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${activeFilter === cat
-                                    ? 'bg-emerald-500 text-white shadow-glow-emerald'
-                                    : 'bg-white dark:bg-navy-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50'
+                                ? 'bg-emerald-500 text-white shadow-glow-emerald'
+                                : 'bg-white dark:bg-navy-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50'
                                 }`}
                         >
                             {cat}
@@ -73,8 +73,11 @@ export default function Projects() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent opacity-60" />
 
                                     {/* Badge */}
-                                    <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold font-mono bg-electric-600/90 text-white backdrop-blur-md shadow-md">
-                                        {project.badge}
+                                    <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold font-mono backdrop-blur-md shadow-md ${project.badge === "B.Sc. Capstone Project"
+                                        ? "bg-gradient-to-r from-amber-500 via-emerald-500 to-electric-600 text-white ring-2 ring-amber-400/50"
+                                        : "bg-electric-600/90 text-white"
+                                        }`}>
+                                        {project.badge === "B.Sc. Capstone Project" ? "🎓 " + project.badge : project.badge}
                                     </span>
                                 </div>
 
