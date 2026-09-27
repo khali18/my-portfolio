@@ -47,17 +47,20 @@ export default function About() {
                                 <div>
                                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white">{personalInfo.name}</h3>
                                     <p className="text-xs font-mono text-electric-600 dark:text-electric-400 font-semibold mt-1">
-                                        Bachelor of Science Degree in Computer Science 🎓
+                                        Bachelor Degree in Computer Science 🎓
                                     </p>
                                     <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                                        AI Software Automation Specialist
+                                        Kumasi Technical University (KsTU) • AI Automation Specialist
                                     </p>
                                 </div>
 
                                 {/* Specialization Pills */}
                                 <div className="flex flex-wrap gap-2 text-[11px] font-semibold">
+                                    <span className="px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-mono">
+                                        Kumasi Technical University
+                                    </span>
                                     <span className="px-3 py-1 rounded-lg bg-electric-500/10 border border-electric-500/30 text-electric-600 dark:text-electric-400 font-mono">
-                                        B.Sc. CS Capstone: MedAI GH
+                                        Capstone: MedAI GH
                                     </span>
                                     <span className="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
                                         Healthcare AI

@@ -1,10 +1,12 @@
 export const personalInfo = {
     name: "Sheripha Sulemana",
-    role: "AI Software Automation Engineer & B.Sc. CS Graduate",
-    title: "AI Software Automation Engineer & Bachelor of Science in Computer Science Graduate",
+    role: "AI Software Automation Engineer • Kumasi Technical University",
+    title: "AI Software Automation Engineer & Bachelor Degree in Computer Science Graduate (Kumasi Technical University)",
     tagline: "Building AI Systems That Save Businesses Time, Reduce Costs, and Automate Work.",
-    bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and Bachelor of Science degree in Computer Science graduate passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
-    bioFull: "I hold a Bachelor of Science degree in Computer Science with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nMy B.Sc. Computer Science final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system designed for pharmacies and users to prevent drug waste, streamline stock forecasting, and automate patient notifications.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
+    bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and Bachelor Degree in Computer Science graduate from Kumasi Technical University passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
+    bioFull: "I hold a Bachelor Degree in Computer Science from Kumasi Technical University with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nMy final year capstone project at Kumasi Technical University was MedAI GH—an AI web-based medicine stock and expiring prediction system designed for pharmacies and users to prevent drug waste, streamline stock forecasting, and automate patient notifications.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
+    education: "Bachelor Degree in Computer Science • Kumasi Technical University",
+    institution: "Kumasi Technical University",
     mission: "I believe technology should eliminate repetitive work and allow people to focus on what matters most.",
     status: "Available for AI Automation Contracts & Full-time Engineering Roles",
     location: "Accra, Ghana • Remote Worldwide",
@@ -477,8 +479,8 @@ Protect your backend from API rate limits by wrapping LLM requests in exponentia
 
 export const aiAssistantKnowledge = [
     {
-        keywords: ["who", "about", "sheripha", "background", "bio", "experience", "education", "degree"],
-        answer: "I am Sheripha Sulemana, an AI Software Automation Engineer and B.Sc. Computer Science graduate. My B.Sc. final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system for pharmacies and users."
+        keywords: ["who", "about", "sheripha", "background", "bio", "experience", "education", "degree", "school", "university", "kstu", "kumasi"],
+        answer: "I am Sheripha Sulemana, an AI Software Automation Engineer and Bachelor Degree in Computer Science graduate from Kumasi Technical University. My final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system for pharmacies and users."
     },
     {
         keywords: ["service", "services", "offer", "do", "help", "work"],
@@ -490,7 +492,7 @@ export const aiAssistantKnowledge = [
     },
     {
         keywords: ["project", "projects", "portfolio", "work", "capstone", "final year", "medai", "pharmacy", "whatsapp"],
-        answer: "My flagship project is MedAI GH (my B.Sc. Computer Science Final Year Capstone Project), an AI web-based medicine stock & expiring prediction system for pharmacies and users. Other projects include the AI Clinic Receptionist, AI WhatsApp Customer Assistant, Invoice Automation System, and Hospital Management System."
+        answer: "My flagship project at Kumasi Technical University is MedAI GH (Final Year Capstone Project), an AI web-based medicine stock & expiring prediction system for pharmacies and users. Other projects include the AI Clinic Receptionist, AI WhatsApp Customer Assistant, Invoice Automation System, and Hospital Management System."
     },
     {
         keywords: ["contact", "hire", "email", "reach", "hire me", "quote", "price", "budget"],
