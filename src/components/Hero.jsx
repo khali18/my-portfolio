@@ -72,7 +72,7 @@ export default function Hero() {
                         {/* Subheadline Paragraph */}
                         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
                             Hi, I'm <strong className="text-slate-900 dark:text-white">{personalInfo.name}</strong>,
-                            an AI Software Automation Engineer and B.Sc. Computer Science graduate passionate about transforming business processes with Artificial Intelligence, automation pipelines, and smart software solutions.
+                            an AI Software Automation Engineer and Bachelor of Science degree in Computer Science graduate passionate about transforming business processes with Artificial Intelligence, automation pipelines, and smart software solutions.
                         </p>
 
                         {/* CTA Buttons */}

@@ -1,10 +1,10 @@
 export const personalInfo = {
     name: "Sheripha Sulemana",
     role: "AI Software Automation Engineer & B.Sc. CS Graduate",
-    title: "AI Software Automation Engineer & B.Sc. Computer Science Graduate",
+    title: "AI Software Automation Engineer & Bachelor of Science in Computer Science Graduate",
     tagline: "Building AI Systems That Save Businesses Time, Reduce Costs, and Automate Work.",
-    bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and B.Sc. Computer Science graduate passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
-    bioFull: "I am a Bachelor of Science in Computer Science (B.Sc. Computer Science) graduate with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nMy B.Sc. Computer Science final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system designed for pharmacies and users to prevent drug waste, streamline stock forecasting, and automate patient notifications.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
+    bioShort: "Hi, I'm Sheripha Sulemana, an AI Software Automation Engineer and Bachelor of Science degree in Computer Science graduate passionate about transforming business processes with Artificial Intelligence, automation, and smart software solutions.",
+    bioFull: "I hold a Bachelor of Science degree in Computer Science with extensive hands-on experience developing intelligent software solutions for healthcare, retail, and business management.\n\nMy B.Sc. Computer Science final year capstone project was MedAI GH—an AI web-based medicine stock and expiring prediction system designed for pharmacies and users to prevent drug waste, streamline stock forecasting, and automate patient notifications.\n\nI specialize in AI-powered automation, workflow optimization, backend development, high-throughput APIs, and business software that solves real-world problems. By blending cutting-edge LLM orchestration with robust backend architecture, I empower companies to eliminate repetitive tasks and scale effortlessly.",
     mission: "I believe technology should eliminate repetitive work and allow people to focus on what matters most.",
     status: "Available for AI Automation Contracts & Full-time Engineering Roles",
     location: "Accra, Ghana • Remote Worldwide",

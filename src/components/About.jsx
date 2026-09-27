@@ -47,7 +47,7 @@ export default function About() {
                                 <div>
                                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white">{personalInfo.name}</h3>
                                     <p className="text-xs font-mono text-electric-600 dark:text-electric-400 font-semibold mt-1">
-                                        B.Sc. Computer Science Graduate 🎓
+                                        Bachelor of Science Degree in Computer Science 🎓
                                     </p>
                                     <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
                                         AI Software Automation Specialist
